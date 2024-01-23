@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/logo.png" />
+    </header>
+    <main>
+      <section id="encrypt-decrypt">
+        <textarea
+          placeholder="Digite seu texto"
+          rows="15"
+          id="encrypt-decrypt-text"
+        ></textarea>
+        <div class="alert-message">
+          <p><i></i> Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="buttons">
+          <input type="button" id="encrypt" value="Criptografar" />
+          <input type="button" id="decrypt" value="Descriptografar" />
+        </div>
+      </section>
+      <section id="encrypt-decrypt-response">
+        <div class="empty-response">
+          <img src="./assets/img/products.png" />
+          <h3 class="title">Nenhuma mensagem encontrada</h3>
+          <p>
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <div class="content-response" style="display: none">
+          <textarea rows="15" id="encrypt-decrypt-text-response"></textarea>
+          <input type="button" id="copy" value="Copiar" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>Desenvolvido por Valdir Ronis</p>
+      </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
